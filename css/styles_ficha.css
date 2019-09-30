@@ -1,0 +1,42 @@
+:root {
+    --max-width: 900px;
+    --text-color: #222222;
+    --bg-color: white;
+    --bg-inverted: #EFEFFE;
+  
+  }
+  
+  * {
+    font-family: Roboto;
+  }
+  
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  section h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 2.5rem;
+  }
+  
+  section img {
+    max-width: 100%;
+  }
+  
+  section.inverted {
+    background-color: var(--bg-inverted);
+    margin-left: calc(50% - 50vw + .6rem);
+    margin-right: calc(50% - 50vw + .6rem);
+  }
+  
+  section .centered {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }

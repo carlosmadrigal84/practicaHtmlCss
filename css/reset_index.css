@@ -1,0 +1,12 @@
+/*reset*/
+*, *:after, *:before {
+    box-sizing: border-box;
+    }
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../fotos/fondo2.jpg); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    }

@@ -1,0 +1,132 @@
+@media all and (max-width: 768px) {
+    .row > div{
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+} 
+
+@media all and (max-width: 768px) {
+    .header > h1,
+    .header > p,
+    .header > div,
+    .header > video{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+      margin: 0;
+      padding: 1rem .5rem;
+      text-align: center;
+    }
+} 
+  
+@media all and (max-width: 768px) {
+    .header > .tagline {
+      display: none;
+    }
+}
+  
+@media all and (max-width: 768px) {
+    .header > .button1 {
+      margin: 0;
+      align-self: center;
+    }
+}
+  
+@media all and (max-width: 768px) {
+    .video-container > myVideo{
+      object-fit: cover;
+    }
+}
+    
+#burger-checkbox {
+      display: none;
+}
+    
+@media all and (max-width: 768px) {
+    .navbar {
+        width: 40%;
+    }
+    
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        margin-top: 51px;
+        height: 100vh;
+        justify-content: flex-start;
+        background-color: var(--text-color);
+        padding-left: 0;
+    }
+      
+    .navbar-list li a {
+        color: var(--bg-color);
+        text-align: center;
+    }
+    
+    .navbar .logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        height: 51px;
+        line-height: 51px;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    #burger-checkbox {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 51px;
+        height: 51px;
+        opacity: 0;
+    }
+    
+    #burger-checkbox:checked ~ .navbar-list {
+        display: inherit;
+    }
+      
+    .burger-label {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 51px;
+        height: 51px;
+        font-size: 42px;
+    }
+    
+    .burger-label:before {
+        content: "";
+        position: absolute;
+        background: white;
+        width: 1em;
+        height: .15em;
+        left: .1em;
+        top: .25em;
+        box-shadow:
+          0 .25em 0 0 white,
+          0 .5em 0 0 white;
+    }  
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+      
+    .links-list {
+        padding-left: 0;
+    }
+      
+    .social-list {
+        justify-content: center;
+        padding-left: 0;
+    }
+}
